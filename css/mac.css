@@ -3,65 +3,72 @@
 /*Global*/
 
 * {
-   font-family: 'Bebas Neue', sans-serif;
-   font-size: calc(63px + 1vmin);
+    font-family: 'Bebas Neue', sans-serif;
 }
+
 h1 {
-   margin-top : 75px;
-   line-height: 20px;
+    margin-top: 75px;
+    line-height: 20px;
 }
 
-.header-name h1{
-	font-size: 85px;
-	color: black;
+.header-name h1 {
+    font-size: 85px;
+    color: black;
 }
-.header-title h1{
-	font-size: 55px;
-	color: black;
+
+.header-title h1 {
+    font-size: 55px;
+    color: black;
 
 }
+
 body {
-   background-color: #dcdcdc;
-   text-align: center;
-   font-family: Bebas Neue;
+    background-color: #dcdcdc;
+    text-align: center;
+    font-family: 'Bebas Neue';
 }
+
 /*Global Buttons*/
 button {
-   border: none;
-   text-decoration: none;
-   font-size: 50px;
-   text-align: center;
-   cursor: pointer;
-   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    border: none;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 button:hover {
-   background-color: #dcdcdc;
-   box-shadow: 0px 2px 12px rgba(58, 175, 169, 0.4);
-   color: black;
-   z-index: 99;
+    background-color: #dcdcdc;
+    box-shadow: 0px 2px 12px rgba(58, 175, 169, 0.4);
+    color: black;
+    z-index: 99;
 }
 
 button:focus {
-   outline: none;
+    outline: none;
 }
 
 button:active {
-   transform: scale(0.99);
+    transform: scale(0.99);
 }
 
 .project-button button {
-   border: 1px solid #D6DBE6;
-   font-size: calc(25px + 3vmin);
-   margin-top : 125px;
-   border-radius: 100px;
-   padding: 16px 32px;
-   color: black;
-   font-weight: 400;
-   background-color: #a9a9a9;
+    border: 1px solid #D6DBE6;
+    font-size: 24px;
+    margin-top: 32px;
+    border-radius: 100px;
+    padding: 16px 32px;
+    color: black;
+    font-weight: 400;
+    background-color: #a9a9a9;
 }
 
 .project-button button i {
-   margin-right: 6px;
-   	font-size: calc(25px + 3vmin);
+    margin-right: 6px;
+    font-size: 24px;
+}
+
+.project-button a {
+    padding: 8px;
 }
