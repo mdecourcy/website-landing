@@ -28,14 +28,13 @@ body {
 }
 
 h1 {
-    font-size: clamp(75px, 1vw, 100px) !important;
-    margin-bottom: 25px;
+    font-size: clamp(45px, 5vw, 85px) !important;
+    margin-bottom: clamp(15px, 5vw, 30px);
 	color: black;
 }
 
 h2 {
-    font-size: clamp(55px, 1vw, 75px) !important;
-    margin-top: 25px;
+    font-size: clamp(25px, 5vw, 65px) !important;
 	color: black;
 }
 
@@ -44,8 +43,8 @@ h3 {
 	color: black;
 }
 .myimg{
-  width:calc(300px + 1vw);
-  height:calc(300px + 1vw);
+  width:calc(150px + 5vw);
+  height:calc(150px + 5vw);
   object-fit:cover;
   border-radius:50%;
 }
@@ -78,7 +77,7 @@ button:active {
 .project-button button {
     border: 1px solid #D6DBE6;
     margin-top: calc(35px + 1vw) !important;
-     font-size: clamp(35px, 1vw, 55px);
+     font-size: clamp(25px, 5vw, 40px);
     margin-top: 32px;
     border-radius: 100px;
     padding: clamp(20px, 1vw, 45px) clamp(30px, 1vw, 75px);
@@ -89,7 +88,7 @@ button:active {
 
 .project-button button i {
     margin-right: 6px;
-    font-size: clamp(35px, 1vw, 32px);
+    font-size: clamp(25px, 5vw, 40px);
 }
 
 .project-button a {
