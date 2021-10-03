@@ -1,33 +1,54 @@
 @charset "UTF-8";
 
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('/fonts/bebasneue-regular-webfont.woff2') format('woff2'),
+         url('/fonts/bebasneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /*Global*/
-
 * {
-    font-family: 'Bebas Neue', sans-serif;
-}
-
-h1 {
-    margin-top: 75px;
-    line-height: 20px;
-}
-
-.header-name h1 {
-    font-size: 85px;
-    color: black;
-}
-
-.header-title h1 {
-    font-size: 55px;
-    color: black;
-
-}
+    font-family: 'bebas_neueregular', sans-serif;
+    line-height: .75em;
+  }
 
 body {
     background-color: #dcdcdc;
     text-align: center;
     font-family: 'Bebas Neue';
+	display: flex;
+	min-height: 70vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
 }
 
+h1 {
+    font-size: clamp(75px, 1vw, 100px) !important;
+    margin-bottom: 25px;
+	color: black;
+}
+
+h2 {
+    font-size: clamp(55px, 1vw, 75px) !important;
+    margin-top: 25px;
+	color: black;
+}
+
+h3 {
+    font-size: 40px !important;
+	color: black;
+}
+.myimg{
+  width:calc(300px + 1vw);
+  height:calc(300px + 1vw);
+  object-fit:cover;
+  border-radius:50%;
+}
 /*Global Buttons*/
 button {
     border: none;
@@ -35,6 +56,7 @@ button {
     font-size: 20px;
     text-align: center;
     cursor: pointer;
+ 
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
@@ -55,10 +77,11 @@ button:active {
 
 .project-button button {
     border: 1px solid #D6DBE6;
-    font-size: 24px;
+    margin-top: calc(35px + 1vw) !important;
+     font-size: clamp(35px, 1vw, 55px);
     margin-top: 32px;
     border-radius: 100px;
-    padding: 16px 32px;
+    padding: clamp(20px, 1vw, 45px) clamp(30px, 1vw, 75px);
     color: black;
     font-weight: 400;
     background-color: #a9a9a9;
@@ -66,7 +89,7 @@ button:active {
 
 .project-button button i {
     margin-right: 6px;
-    font-size: 24px;
+    font-size: clamp(35px, 1vw, 32px);
 }
 
 .project-button a {
