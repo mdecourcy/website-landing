@@ -29,12 +29,13 @@ body {
 
 h1 {
     font-size: clamp(45px, 10vw, 85px) !important;
-    margin-bottom: clamp(15px, 5vw, 30px);
+    margin-bottom: clamp(1px, 1vw, 5px) !important;
 	color: black;
 }
 
 h2 {
     font-size: clamp(25px, 10vw, 65px) !important;
+    margin-bottom: clamp(15px, 10vw, 55px) !important;
 	color: black;
 }
 
@@ -43,8 +44,8 @@ h3 {
 	color: black;
 }
 .myimg{
-  width:calc(150px + 5vw);
-  height:calc(150px + 5vw);
+  width:calc(175px + 10vw);
+  height:calc(175px + 10vw);
   object-fit:cover;
   border-radius:50%;
 }
@@ -55,7 +56,6 @@ button {
     font-size: 20px;
     text-align: center;
     cursor: pointer;
- 
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
@@ -76,11 +76,14 @@ button:active {
 
 .project-button button {
     border: 1px solid #D6DBE6;
-    margin-top: calc(35px + 1vw) !important;
-     font-size: clamp(25px, 5vw, 40px);
-    margin-top: 32px;
+    font-size: clamp(1.5rem, 5vw, 1.75rem);
+    margin-bottom: clamp(5px, 10vw, 20px) !important;
+    min-height: 70;
+    max-height: 100;
+    min-width: 175px;
+    max-width: 200px;
     border-radius: 100px;
-    padding: clamp(20px, 1vw, 45px) clamp(30px, 1vw, 55px);
+    padding: clamp(15px, 1vw, 20px) clamp(30px, 2vw,45px);
     color: black;
     font-weight: 400;
     background-color: #a9a9a9;
@@ -88,7 +91,7 @@ button:active {
 
 .project-button button i {
     margin-right: 6px;
-    font-size: clamp(25px, 5vw, 40px);
+    font-size: clamp(1.5rem, 5vw, 1.75rem);
 }
 
 .project-button a {
